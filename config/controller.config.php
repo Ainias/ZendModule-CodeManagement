@@ -1,8 +1,8 @@
 <?php
 
-namespace CodeManagement;
+namespace Ainias\CodeManagement;
 
-use Application\Factory\Controller\ServiceActionControllerFactory;
+use Ainias\Core\Factory\Controller\ServiceActionControllerFactory;
 
 return array(
     'controllers' => [

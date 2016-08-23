@@ -1,6 +1,6 @@
 <?php
 
-namespace CodeManagement;
+namespace Ainias\CodeManagement;
 
 return array(
     'doctrine' => array(

@@ -1,9 +1,9 @@
 <?php
 
-namespace CodeManagement\Factory\Model\Manager;
+namespace Ainias\CodeManagement\Factory\Model\Manager;
 
-use CodeManagement\Model\Code;
-use CodeManagement\Model\Manager\CodeManager;
+use Ainias\CodeManagement\Model\Code;
+use Ainias\CodeManagement\Model\Manager\CodeManager;
 use Doctrine\ORM\EntityManager;
 use Interop\Container\ContainerInterface;
 use Zend\ServiceManager\Factory\FactoryInterface;

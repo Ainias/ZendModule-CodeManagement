@@ -12,14 +12,30 @@
     }
   ],
   "require": {
-    "php":                                "^7.0"
+    "php":                                "^7.0",
+    "ainias/zend-module-core": "dev-master"
+
   },
   "require-dev": {
     },
 
   "autoload": {
     "psr-4": {
-      "CodeManagement\\": "src/"
+      "Ainias\\CodeManagement\\": "src/"
     }
-  }
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/Ainias/doctrineZF3"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/Ainias/doctrineORMModule"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/Ainias/ZendModule-Core"
+    }
+  ]
 }

@@ -6,11 +6,11 @@
  * Time: 12:14
  */
 
-namespace CodeManagement\Model\Repository;
+namespace Ainias\CodeManagement\Model\Repository;
 
 
-use Application\Model\Repository\StandardRepository;
-use CodeManagement\Model\Code;
+use Ainias\Core\Model\Repository\StandardRepository;
+use Ainias\CodeManagement\Model\Code;
 use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\Mapping;
 

@@ -1,9 +1,9 @@
 <?php
 
-namespace CodeManagement;
+namespace Ainias\CodeManagement;
 
-use CodeManagement\Factory\Model\Manager\CodeManagerFactory;
-use CodeManagement\Model\Manager\CodeManager;
+use Ainias\CodeManagement\Factory\Model\Manager\CodeManagerFactory;
+use Ainias\CodeManagement\Model\Manager\CodeManager;
 
 return array(
     'service_manager' => array(

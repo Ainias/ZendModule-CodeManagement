@@ -6,19 +6,15 @@
  * Time: 12:12
  */
 
-namespace CodeManagement\Model;
+namespace Ainias\CodeManagement\Model;
 
-use Application\Controller\ServiceActionController;
-use Application\Model\StandardModel;
-use CodeManagement\Model\Manager\CodeManager;
+use Ainias\Core\Controller\ServiceActionController;
+use Ainias\Core\Model\StandardModel;
 use Doctrine\ORM\Mapping as ORM;
 use Interop\Container\ContainerInterface;
-use Zend\ServiceManager\ServiceManager;
-use Application\Model\Doctrine\DiscriminatorEntry;
 
 /**
- * @ORM\Entity(repositoryClass="\CodeManagement\Model\Repository\CodeRepository")
- * @ORM\Table(name="silas_CodeManagement.Code")
+ * @ORM\Entity(repositoryClass="\Ainias\CodeManagement\Model\Repository\CodeRepository")
  * @ORM\InheritanceType("JOINED")
  * @ORM\DiscriminatorColumn(name="discriminator", type="string")
  */

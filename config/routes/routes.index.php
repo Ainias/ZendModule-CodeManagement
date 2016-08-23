@@ -1,8 +1,8 @@
 <?php
 
-namespace CodeManagement;
+namespace Ainias\CodeManagement;
 
-use CodeManagement\Controller\IndexController;
+use Ainias\CodeManagement\Controller\IndexController;
 use Zend\Router\Http\Segment;
 
 return array(

@@ -5,12 +5,11 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace CodeManagement\Controller;
+namespace Ainias\CodeManagement\Controller;
 
-use Application\Controller\ServiceActionController;
-use CodeManagement\Model\Code;
-use CodeManagement\Model\Manager\CodeManager;
-use Zend\Mvc\MvcEvent;
+use Ainias\Core\Controller\ServiceActionController;
+use Ainias\CodeManagement\Model\Code;
+use Ainias\CodeManagement\Model\Manager\CodeManager;
 
 class IndexController extends ServiceActionController
 {

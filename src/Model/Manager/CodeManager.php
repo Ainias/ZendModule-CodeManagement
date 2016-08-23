@@ -1,10 +1,10 @@
 <?php
 
-namespace CodeManagement\Model\Manager;
+namespace Ainias\CodeManagement\Model\Manager;
 
-use Application\Model\Manager\StandardManager;
-use CodeManagement\Model\Code;
-use CodeManagement\Model\Repository\CodeRepository;
+use Ainias\Core\Model\Manager\StandardManager;
+use Ainias\CodeManagement\Model\Code;
+use Ainias\CodeManagement\Model\Repository\CodeRepository;
 
 class CodeManager extends StandardManager
 {
