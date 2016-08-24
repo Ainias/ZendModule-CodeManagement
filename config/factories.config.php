@@ -12,8 +12,8 @@ return array(
         'aliases' => array(
         ),
         'factories' => array(
-            'doctrine.entitymanager.'.__NAMESPACE__ => new \DoctrineORMModule\Service\EntityManagerFactory(__NAMESPACE__),
-            'doctrine.connection.'.__NAMESPACE__ => new \DoctrineORMModule\Service\DBALConnectionFactory(__NAMESPACE__),
+            'doctrine.entitymanager.CodeManagement' => new \DoctrineORMModule\Service\EntityManagerFactory(__NAMESPACE__),
+            'doctrine.connection.CodeManagement' => new \DoctrineORMModule\Service\DBALConnectionFactory(__NAMESPACE__),
 
             CodeManager::class => CodeManagerFactory::class,
         ),
