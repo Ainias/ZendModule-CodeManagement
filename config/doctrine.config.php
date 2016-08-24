@@ -2,23 +2,24 @@
 
 namespace Ainias\CodeManagement;
 
+$lastNamespacePart = explode("\\", __NAMESPACE__)[1];
 return array(
     'doctrine' => array(
         'connection' => array(
-            __NAMESPACE__ => array(
+            $lastNamespacePart => array(
                 'wrapperClass' => 'Application\Connections\MyConnection',
                 'params' => array(
-                    'dbname' => 'silas_'.__NAMESPACE__,
+                    'dbname' => 'silas_'.$lastNamespacePart,
                 )
             )
         ),
         'driver' => array(
             'orm_default' => array(
                 'drivers' => array(
-                    __NAMESPACE__.'\Model' => 'entities_'.__NAMESPACE__
+                    $lastNamespacePart.'\Model' => 'entities_'.$lastNamespacePart
                 ),
             ),
-            'entities_'.__NAMESPACE__ => array(
+            'entities_'.$lastNamespacePart => array(
                 'class' => 'Doctrine\ORM\Mapping\Driver\AnnotationDriver',
                 'cache' => 'array',
                 'paths' => array(
@@ -27,8 +28,8 @@ return array(
             )
         ),
         'entitymanager' => array(
-            __NAMESPACE__ => array(
-                'connection' => __NAMESPACE__,
+            $lastNamespacePart => array(
+                'connection' => $lastNamespacePart,
             )
         ),
     ),
