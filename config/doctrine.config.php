@@ -16,7 +16,7 @@ return array(
         'driver' => array(
             'orm_default' => array(
                 'drivers' => array(
-                    $lastNamespacePart.'\Model' => 'entities_'.$lastNamespacePart
+                    __NAMESPACE__.'\Model' => 'entities_'.$lastNamespacePart
                 ),
             ),
             'entities_'.$lastNamespacePart => array(
