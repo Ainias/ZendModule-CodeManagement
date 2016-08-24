@@ -2,12 +2,14 @@
 
 namespace Ainias\CodeManagement;
 
+use Ainias\Core\Connections\MyConnection;
+
 $lastNamespacePart = explode("\\", __NAMESPACE__)[1];
 return array(
     'doctrine' => array(
         'connection' => array(
             $lastNamespacePart => array(
-                'wrapperClass' => 'Application\Connections\MyConnection',
+                'wrapperClass' => MyConnection::class,
                 'params' => array(
                     'dbname' => 'silas_'.$lastNamespacePart,
                 )
