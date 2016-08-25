@@ -3,6 +3,7 @@
 namespace Ainias\CodeManagement;
 
 use Ainias\Core\Connections\MyConnection;
+use Doctrine\ORM\Mapping\Driver\AnnotationDriver;
 
 $lastNamespacePart = explode("\\", __NAMESPACE__)[1];
 return array(
@@ -22,7 +23,7 @@ return array(
                 ),
             ),
             'entities_'.$lastNamespacePart => array(
-                'class' => 'Doctrine\ORM\Mapping\Driver\AnnotationDriver',
+                'class' => AnnotationDriver::class,
                 'cache' => 'array',
                 'paths' => array(
                     __DIR__ . '/../src/Model',
