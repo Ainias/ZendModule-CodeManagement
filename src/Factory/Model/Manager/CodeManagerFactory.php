@@ -18,7 +18,7 @@ class CodeManagerFactory implements FactoryInterface
     public function createService(ContainerInterface $serviceLocator)
     {
         /** @var EntityManager $em */
-        $em = $serviceLocator->get('doctrine.entitymanager.default');
+        $em = $serviceLocator->get('doctrine.entitymanager.orm_default');
         return new CodeManager($em->getRepository(Code::class));
     }
 } 
