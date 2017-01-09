@@ -8,6 +8,7 @@
 
 namespace Ainias\CodeManagement\Model;
 
+use Ainias\CodeManagement\Model\Manager\CodeManager;
 use Ainias\Core\Controller\ServiceActionController;
 use Ainias\Core\Model\StandardModel;
 use Doctrine\ORM\Mapping as ORM;
@@ -124,9 +125,16 @@ abstract class Code extends StandardModel
         $this->successMessage = $successMessage;
     }
 
-    public function resolveCode(ContainerInterface $sm, ServiceActionController $serviceActionController)
+    protected function remove(ContainerInterface $container)
     {
-        $result = $this->doAction($sm, $serviceActionController);
+        /** @var CodeManager $codeManager */
+        $codeManager = $container->get(CodeManager::class);
+        $codeManager->remove($this);
+    }
+
+    public function resolveCode(ContainerInterface $container, ServiceActionController $serviceActionController)
+    {
+        $result = $this->doAction($container, $serviceActionController);
         if ($result === null)
         {
             $result = $serviceActionController->redirect()->toRoute("home");
