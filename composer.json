@@ -13,7 +13,7 @@
   ],
   "require": {
     "php":                                "^7.0",
-    "ainias/zend-module-core": "0.0.*"
+    "ainias/zend-module-core": "dev-master as 0.0.10"
 
   },
   "require-dev": {
