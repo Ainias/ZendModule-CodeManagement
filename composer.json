@@ -13,8 +13,7 @@
   ],
   "require": {
     "php":                                "^7.0",
-    "ainias/zend-module-core": "dev-master as 0.0.10"
-
+    "ainias/zend-module-core": "dev-master as0.0.10"
   },
   "require-dev": {
     },
@@ -27,7 +26,7 @@
   "repositories": [
     {
       "type": "vcs",
-      "url": "/var/www/Ainias/new/ZendModule-Core"
+      "url": "https://github.com/Ainias/ZendModule-Core"
     }
   ]
 }
