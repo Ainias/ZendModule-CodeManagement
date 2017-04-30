@@ -1,23 +1,22 @@
 {
-  "name":        "ainias/zend-module-code-management",
+  "name": "ainias/zend-module-code-management",
   "description": "Zend Framework 3 Module for code management",
-  "type":        "library",
-  "keywords":    [
+  "type": "library",
+  "keywords": [
     "module",
     "zf3"
   ],
-  "authors":     [
+  "authors": [
     {
       "name": "Ainias"
     }
   ],
   "require": {
-    "php":                                "^7.0",
+    "php": "^7.0",
     "ainias/zend-module-core": "dev-master as 0.0.10"
   },
   "require-dev": {
-    },
-
+  },
   "autoload": {
     "psr-4": {
       "Ainias\\CodeManagement\\": "src/"
